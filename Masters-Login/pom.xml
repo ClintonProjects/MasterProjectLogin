@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bitcoinprice</groupId>
-	<artifactId>MasterAnalytics</artifactId>
+	<artifactId>MasterLogin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MasterAnalytics</name>
 	<description>Demo project for Spring Boot</description>
@@ -43,7 +43,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>5.3.9</version>
 		</dependency>
 
 		<dependency>
@@ -96,14 +95,8 @@
 			<groupId>com.bitcoinprice</groupId>
 			<artifactId>MasterProjectModel</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			
 		</dependency>
-
-		<dependency>
-			<groupId>com.bitcoinprice</groupId>
-			<artifactId>MasterProjectApiCallsAndSort</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
 	</dependencies>
 
 
