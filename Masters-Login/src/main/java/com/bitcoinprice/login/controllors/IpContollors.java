@@ -54,7 +54,7 @@ public class IpContollors {
 		return userLoginService.getEmailBySessionId(SesionId);
 	}
 
-	@PostMapping(value = "/Register")
+	@PostMapping(value = "/register")
 	public Object RegisterUser(@RequestBody Login login)
 			throws InvalidKeyException, SignatureException, NoSuchAlgorithmException {
 		String result = userLoginService.RegisterUser(login.getEmail(), login.getPassword());
