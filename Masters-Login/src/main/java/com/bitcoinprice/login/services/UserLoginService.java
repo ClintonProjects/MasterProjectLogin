@@ -53,8 +53,8 @@ public class UserLoginService {
 		}
 	}
 
-//	@Scheduled(fixedRate = 1000 * 60 * 60 * 24 * 30)
-	@Bean
+	@Scheduled(fixedRate = 1000 * 60 * 60 * 24 * 30)
+//	@Bean
 	public void updateActiveSessions() {
 		System.out.println("ran");
 		List<UserSession> createUserSession = SessionIdTable.findAll();
@@ -62,7 +62,7 @@ public class UserLoginService {
 		for (UserSession i : createUserSession) {
 			i.updateActiveSession();
 			r.add(i);
-			System.out.println(i.isActiveSession());
+//			System.out.println(i.isActiveSession());
 			SessionIdTable.save(i);
 		}
 	}

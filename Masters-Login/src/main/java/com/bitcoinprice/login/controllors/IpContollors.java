@@ -34,14 +34,14 @@ import com.bitcoinprice.login.services.UserLoginService;
 @CrossOrigin(origins = "*")
 public class IpContollors {
 
-	@GetMapping("/test")
-	public String r() {
-		return "UWU";
-	}
-
 	@Autowired
 	UserLoginService userLoginService;
 
+	@GetMapping("/t")
+	public String r() {
+		return "UWU";
+	}
+	
 	@PostMapping(value = "/login")
 	public response Login(@RequestBody Login login)
 			throws InvalidKeyException, SignatureException, NoSuchAlgorithmException {
