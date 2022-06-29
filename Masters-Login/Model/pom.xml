@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bitcoinprice</groupId>
-	<artifactId>MasterAnalytics</artifactId>
+	<artifactId>MasterProjectModel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MasterAnalytics</name>
+	<name>MasterProjectModel</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -52,32 +52,6 @@
 		</dependency>
 
 
-
-		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-schema</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-
-
 		<dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
@@ -91,22 +65,9 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
-
-		<dependency>
-	    <groupId>com.github.ClintonProjects</groupId>
-	    <artifactId>MasterProjectModel</artifactId>
-	    <version>640f8b12af</version>
-	</dependency>
 	</dependencies>
-
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-
-
+	
+	
 
 	<build>
 		<plugins>
