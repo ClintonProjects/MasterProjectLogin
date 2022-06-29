@@ -34,6 +34,11 @@ import com.bitcoinprice.login.services.UserLoginService;
 @CrossOrigin(origins = "*")
 public class IpContollors {
 
+	@GetMapping("/test")
+	public String r() {
+		return "UWU";
+	}
+
 	@Autowired
 	UserLoginService userLoginService;
 
@@ -54,7 +59,7 @@ public class IpContollors {
 			throws InvalidKeyException, SignatureException, NoSuchAlgorithmException {
 		String result = userLoginService.RegisterUser(login.getEmail(), login.getPassword());
 		if (result.equals("error"))
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		return new response(userLoginService.Login(login.getEmail(), login.getPassword()));
 	}
 
