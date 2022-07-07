@@ -36,12 +36,12 @@ public class IpContollors {
 
 	@Autowired
 	UserLoginService userLoginService;
-
-	@GetMapping("/t")
-	public String r() {
-		return "UWU";
-	}
 	
+	@GetMapping("/t")
+	public String t() {
+		return "test";
+	}
+
 	@PostMapping(value = "/login")
 	public response Login(@RequestBody Login login)
 			throws InvalidKeyException, SignatureException, NoSuchAlgorithmException {
@@ -54,12 +54,12 @@ public class IpContollors {
 		return userLoginService.getEmailBySessionId(SesionId);
 	}
 
-	@PostMapping(value = "/register")
+	@PostMapping(value = "/Register")
 	public Object RegisterUser(@RequestBody Login login)
 			throws InvalidKeyException, SignatureException, NoSuchAlgorithmException {
 		String result = userLoginService.RegisterUser(login.getEmail(), login.getPassword());
 		if (result.equals("error"))
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		return new response(userLoginService.Login(login.getEmail(), login.getPassword()));
 	}
 
