@@ -37,7 +37,7 @@ public class IpContollors {
 	@Autowired
 	UserLoginService userLoginService;
 	
-	@GetMapping("/t")
+	@GetMapping(value = "/t")
 	public String t() {
 		return "test";
 	}
